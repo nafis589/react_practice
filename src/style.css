@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.item-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 10px;
+}
+.card {
+  background-color: rgb(225, 249, 249);
+  margin: 10px;
+  padding: 30px;
+  transition: 1s ease;
+  cursor: pointer;
+  font-size: 12px;
+}
+img {
+  width: 300px;
+  height: 200px;
+  border-radius: 6px;
+}
+.card:hover {
+  transform: scale(1.1);
+}
+.content {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  font-family: sans-serif;
+}
+p {
+  font-weight: bold;
+}
