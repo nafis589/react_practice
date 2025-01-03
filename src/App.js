@@ -1,8 +1,8 @@
-import Main from "./Main.js";
+import Calculatrice from "./calculatrice.js";
 function App() {
   return (
     <div className="App">
-      <Main />
+      <Calculatrice />
     </div>
   );
 }
