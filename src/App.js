@@ -1,8 +1,8 @@
-import Calculatrice from "./calculatrice.js";
+import ToggleButton from "./ToggleButton.js";
 function App() {
   return (
     <div className="App">
-      <Calculatrice />
+      <ToggleButton />
     </div>
   );
 }
