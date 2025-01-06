@@ -1,4 +1,5 @@
 import { useState } from "react";
+import "./ToggleButton.css";
 
 const ToggleButton = () => {
   const [backgroundColor, setBackgroundColor] = useState("white");
@@ -6,21 +7,21 @@ const ToggleButton = () => {
   const [buttonStyle, setButtonStyle] = useState("white");
   function handleClick() {
     setBackgroundColor(backgroundColor === "white" ? "black" : "white");
-    setTextColor(textColor === "black" ? "white" : "black");
+    setTextColor(textColor === "black" ? "#ffa31a" : "black");
     setButtonStyle(backgroundColor === "white" ? "black" : "white");
   }
   return (
     <div>
-      <section syle={{ backgroundColor, color: textColor }}>
+      <section style={{ backgroundColor, color: textColor }}>
         <button
           onClick={handleClick}
           style={{
             buttonStyle,
             color: textColor,
-            border: "2px solid ${textColor}",
+            border: `2px solid ${textColor}`,
           }}
         >
-          alterner
+          {backgroundColor === "white" ? "Clair" : "sombre"}
         </button>
         <section className="content">
           <h1>
